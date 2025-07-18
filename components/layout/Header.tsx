@@ -3,7 +3,7 @@
 import React from 'react';
 import { useState, Suspense } from "react";
 import Logo from '@/components/layout/Logo';
-/* import Menu from '@/components/layout/Menu'; */
+import Menu from '@/components/layout/Menu';
 
 export default function Header() {
 
@@ -16,7 +16,7 @@ export default function Header() {
                 {/* Logo */}
                 <Logo />
                 {/* Menú */}
-                <p>Menú</p>
+                <Menu tipo="normal" />
                 {/* <Menu tipo="header" /> */}
             </div>
         </header>
