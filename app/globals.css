@@ -7,7 +7,7 @@
 
 :root {
   --brand: #EA5153;
-  --gris-claro: #B0AAAA;
+  --gris-claro: #c9c8c8;
   --gris-oscuro: #646161;
 }
 
@@ -49,33 +49,35 @@ main {
   h1 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
-    font-size: 3.4rem;
+    font-size: 6rem;
     color: var(--foreground);
-    letter-spacing: 0.01em;
-    line-height: 3rem;
+    line-height: 5rem;
+    margin-top: 0;
   }
 
   h2 {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.8rem;
+    font-weight: 200;
+    font-size: 3.4rem;
     color: var(--foreground);
-    letter-spacing: 0.02em;
-    line-height: normal;
+    line-height: 3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 
   h3 {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
-    color: var(--foreground);
-    line-height: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--brand);
+    line-height: 3rem;
+    margin-top: 0;
   }
 
   h4 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: var(--foreground);
     line-height: 1.3rem;
   }
@@ -85,7 +87,7 @@ main {
     font-weight: 200;
     font-size: 1.1rem;
     color: var(--foreground);
-    line-height: 1.8rem;
+    line-height: 1.6rem;
   }
 
   a, strong {

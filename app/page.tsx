@@ -12,7 +12,7 @@ export default function Home() {
         <div className="w-1/2 flex flex-col gap-[2rem] pl-[7rem]">
           {/* Introducción */}
           <div>
-            <h1>Eva Gandia Belda</h1>
+            <h2>Eva Gandia Belda</h2>
             <p>Desarrolladora web, diseñadora UX/UI y diseñadora gráfica.<br />
               Formada en las últimas tecnologías de desarrollo web.<br />
               +12 años de experiencia en producción gráfica y medios impresos.</p>
