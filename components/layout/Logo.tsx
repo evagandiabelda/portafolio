@@ -11,7 +11,7 @@ export default function Logo() {
                 alt="Logotipo"
                 width={40}
                 height={40}
-                className="w-full object-contain mx-auto p-8"
+                className="w-full object-contain"
             />
         </a>
 

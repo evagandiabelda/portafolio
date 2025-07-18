@@ -1,15 +1,14 @@
 /* ------------ FUENTES ------------ */
 
-/* Fuente Inter: */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Fuente DM Sans: */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-/* Fuente Nohemi: */
-@font-face {
-  font-family: 'Nohemi';
-  src: url('/fonts/Nohemi-ExtraBold.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+/* ------------ COLORES ------------ */
+
+:root {
+  --brand: #EA5153;
+  --gris-claro: #B0AAAA;
+  --gris-oscuro: #646161;
 }
 
 /* ------------ TAILWIND ----------- */
@@ -17,13 +16,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------------ ESTILOS BASE ------------ */
+
+/* MODO CLARO: */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
 /* MODO OSCURO: */
-
 .dark {
   --background: #171717;
   --foreground: #ffffff;
@@ -34,10 +35,109 @@ body {
   padding: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
 }
-
 
 main {
   min-height: calc(100vh - 80px);
 }
+
+/* ------------ ESTILOS GLOBALES ------------ */
+
+  h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: var(--foreground);
+    letter-spacing: 0.01em;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--foreground);
+    letter-spacing: 0.02em;
+    line-height: normal;
+  }
+
+  h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--foreground);
+    line-height: normal;
+  }
+
+  h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--foreground);
+    line-height: 1.3rem;
+  }
+
+  p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1.1rem;
+    color: var(--foreground);
+    line-height: 1.8rem;
+  }
+
+  a, strong {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--foreground);
+    /* Si se quiere subrayado, añadir className="hover:underline" en el elemento específico. */
+  }
+
+  .a-boton-gr {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .a-boton-pq {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+
+  form,  form * {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .resaltar-texto {
+    color: var(--gris-oscuro);
+  }
+
+  .resaltar-texto:hover {
+    color: #fff;
+  }
+
+  .placeholder-light::placeholder {
+    color: var(--gris-oscuro);
+    opacity: 0.6;
+  }
+
+  .placeholder-dark::placeholder {
+    color: var(--gris-claro);
+    opacity: 0.4;
+  }
+
+  label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.6;
+    color: var(--gris-claro);
+  }
