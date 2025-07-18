@@ -71,7 +71,7 @@ main {
     font-size: 1.8rem;
     color: var(--brand);
     line-height: 3rem;
-    margin-top: 0;
+    margin: 0;
   }
 
   h4 {
