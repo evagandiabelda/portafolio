@@ -1,5 +1,8 @@
 'use client';
 
+import Image from "next/image";
+import Habilidad from "@/components/other/Habilidad";
+
 export default function SobreMi() {
 
     return (
@@ -13,23 +16,50 @@ export default function SobreMi() {
             </div>
 
             {/* Contenido */}
-            <div className="w-3/4 px-[3rem] py-[5rem]">
+            <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[2rem]">
 
                 <h2 className="text-[var(--gris-claro)]">Diseñadora 360º</h2>
 
-                <div className="p-[1rem]">
-                    <h3>Habilidades Digitales</h3>
-                    <p>...</p>
-                </div>
+                <div className="flex flex-col gap-[3rem]">
+                    {/* Habilidades de Desarrollo */}
+                    <div className="p-[1rem] flex flex-col gap-[0.6rem]">
 
-                <div className="p-[1rem]">
-                    <h3>Habilidades Gráficas</h3>
-                    <p>...</p>
-                </div>
+                        <h3>Habilidades de Desarrollo</h3>
 
-                <div className="p-[1rem]">
-                    <h3>Otros aspectos</h3>
-                    <p>...</p>
+                        <table className="w-full border-collapse">
+                            <tbody>
+                                <Habilidad
+                                    icono="/icons/icono-figma.svg"
+                                    nombre="Figma"
+                                    descripcion="Diseño y prototipado de interfaces"
+                                    nivel="Avanzado"
+                                />
+                                <Habilidad
+                                    icono="/icons/icono-vscode.svg"
+                                    nombre="Visual Studio Code"
+                                    descripcion="Edición y depuración de código"
+                                    nivel="Avanzado"
+                                />
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    {/* Habilidades Gráficas */}
+                    <div className="p-[1rem]">
+
+                        <h3>Habilidades Gráficas</h3>
+
+                        <p>...</p>
+                    </div>
+
+                    {/* Datos de interés */}
+                    <div className="p-[1rem]">
+
+                        <h3>Datos de interés</h3>
+
+                        <p>...</p>
+                    </div>
                 </div>
 
             </div>

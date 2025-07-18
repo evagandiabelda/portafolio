@@ -92,7 +92,7 @@ main {
 
   a, strong {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.1rem;
     color: var(--foreground);
     text-decoration: none;
