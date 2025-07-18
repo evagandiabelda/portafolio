@@ -10,7 +10,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="px-[1rem] py-[1rem] bg-white">
+        <header className="px-[1rem] pt-[1.2rem] pb-[1rem] bg-white">
             {/* Caja Principal */}
             <div className="flex items-center justify-between gap-9 px-[2rem]">
                 {/* Logo */}

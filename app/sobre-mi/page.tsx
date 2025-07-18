@@ -10,19 +10,21 @@ import Habilidad from "@/components/other/Habilidad";
 
 export default function SobreMi() {
 
-    const triggerClassname = "border-none bg-[#ffffff] cursor-pointer hover:bg-[#f0f0f0] px-[1rem] py-[0.6rem] rounded-[0.6rem]";
+    const triggerClassname = "border-none bg-[#ffffff] cursor-pointer hover:bg-[#e7e7e7] px-[1rem] py-[0.6rem] rounded-[0.6rem] transition-all duration-300 ease-in-out";
 
     return (
         <div className="w-full flex">
 
             {/* Sidebar */}
-            <div className="w-1/4 px-[3rem] py-[5rem] bg-[var(--gris-claro)]">
+
+            <div className="w-1/4 px-[3rem] py-[5rem] bg-[var(--gris-claro)] rounded-tr-[4rem]">
                 <h1>Sobre mí</h1>
                 <p>Diseñadora gráfica de vocación, desarrolladora web por evolución. Tras más de 12 años dedicada a las Artes Gráficas, decidí ampliar horizontes y sumergirme en el universo digital.</p>
                 <p>Me gusta cuidar cada detalle, desde el primer boceto hasta el último píxel. Disfruto combinando lo técnico con lo visual, lo funcional con lo estético.</p>
             </div>
 
             {/* Contenido */}
+
             <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[3rem]">
 
                 <h2 className="text-[var(--gris-claro)]">Diseñadora 360º</h2>
@@ -39,12 +41,6 @@ export default function SobreMi() {
 
                                 <table className="w-full border-collapse">
                                     <tbody>
-                                        <Habilidad
-                                            icono="/icons/icono-figma.svg"
-                                            nombre="Figma"
-                                            descripcion="Diseño y prototipado de interfaces"
-                                            nivel="Avanzado"
-                                        />
                                         <Habilidad
                                             icono="/icons/icono-vscode.svg"
                                             nombre="Visual Studio Code"
@@ -162,6 +158,24 @@ export default function SobreMi() {
                                             descripcion="Diseño y prototipado de interfaces"
                                             nivel="Avanzado"
                                         />
+                                        <Habilidad
+                                            icono="/icons/icono-illustrator.svg"
+                                            nombre="Illustrator"
+                                            descripcion="Diseño e ilustración vectorial"
+                                            nivel="Avanzado"
+                                        />
+                                        <Habilidad
+                                            icono="/icons/icono-indesign.svg"
+                                            nombre="InDesign"
+                                            descripcion="Maquetación de publicaciones"
+                                            nivel="Avanzado"
+                                        />
+                                        <Habilidad
+                                            icono="/icons/icono-photoshop.svg"
+                                            nombre="Photoshop"
+                                            descripcion="Edición de fotografía"
+                                            nivel="Alto"
+                                        />
                                     </tbody>
                                 </table>
 
@@ -178,10 +192,22 @@ export default function SobreMi() {
                                 <table className="w-full border-collapse">
                                     <tbody>
                                         <Habilidad
-                                            icono="/icons/icono-figma.svg"
-                                            nombre="Figma"
-                                            descripcion="Diseño y prototipado de interfaces"
+                                            icono="/icons/icono-edad.svg"
+                                            nombre="35 años"
+                                            descripcion="Responsabilidad, estabilidad y experiencia"
+                                            nivel=""
+                                        />
+                                        <Habilidad
+                                            icono="/icons/icono-english.svg"
+                                            nombre="Inglés"
+                                            descripcion="Fluidez en inglés técnico, hablado y escrito"
                                             nivel="Avanzado"
+                                        />
+                                        <Habilidad
+                                            icono="/icons/icono-coche.svg"
+                                            nombre="Movilidad"
+                                            descripcion="Carnet de conducir B"
+                                            nivel="17 años"
                                         />
                                     </tbody>
                                 </table>
