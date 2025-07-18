@@ -1,37 +1,20 @@
 'use client';
 
-type modo = {
-    // Valores aceptados:
-    modo?: "claro" | "oscuro";
-};
+import Image from "next/image";
 
-export default function Logo({ modo }: modo) {
+export default function Logo() {
 
-    /* COMPORTAMIENTO PERSONALIZADO: */
+    return (
+        <a href="/">
+            <Image
+                src="/logos/logo-eva.svg"
+                alt="Logotipo"
+                width={40}
+                height={40}
+                className="w-full object-contain mx-auto p-8"
+            />
+        </a>
 
-    if (modo === "claro") {
-        return (
-            <a href="/">
-                <img
-                    src="/logos/logo-2.svg"
-                    alt="Logotipo"
-                    className="w-full object-contain mx-auto" // Visible en modo claro
-                />
-            </a>
-
-        );
-    }
-
-    if (modo === "oscuro") {
-        return (
-            <a href="/">
-                <img
-                    src="/logos/logo-2.svg"
-                    alt="Logotipo en modo oscuro"
-                    className="w-full object-contain mx-auto invert" // Visible en modo oscuro
-                />
-            </a>
-        );
-    }
+    );
 
 };
