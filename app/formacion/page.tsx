@@ -27,36 +27,42 @@ export default function Formacion() {
 
                     {/* TIMELINE */}
 
-                    <VerticalTimeline>
+                    <VerticalTimeline layout={'1-column-left'} lineColor={'var(--brand)'}>
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            date="2022 - actualidad"
+                            contentStyle={{ background: '#e7e7e7', color: '#fff' }}
+                            contentArrowStyle={{ borderRight: '7px solid #e7e7e7' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >
-                            <h3 className="vertical-timeline-element-title pb-[1rem]">Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web</h3>
-                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2]">IES L'Estació (Ontinyent)</h4>
+                            <p className='text-[var(--gris-oscuro)] px-[1rem] pb-[2rem]'>2022 - actualidad</p>
+                            <h3 className="vertical-timeline-element-title px-[1rem] pb-[1rem] text-[var(--gris-oscuro)]">Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web</h3>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem]">IES L'Estació (Ontinyent)</h4>
                         </VerticalTimelineElement>
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            date="2008 - 2011"
+                            contentStyle={{ background: '#e7e7e7', color: '#fff' }}
+                            contentArrowStyle={{ borderRight: '7px solid #e7e7e7' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >
-                            <h3 className="vertical-timeline-element-title pb-[1rem]">Licenciatura en Publicidad y Relaciones Públicas</h3>
-                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2]">Universitat d'Alacant</h4>
+                            <p className='text-[var(--gris-oscuro)] px-[1rem] pb-[2rem]'>2008 - 2011</p>
+                            <h3 className="vertical-timeline-element-title px-[1rem] pb-[1rem] text-[var(--gris-oscuro)]">Licenciatura en Publicidad y Relaciones Públicas</h3>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem]">Universitat d'Alacant</h4>
                         </VerticalTimelineElement>
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            date="2005 - 2007"
+                            contentStyle={{ background: '#e7e7e7', color: '#fff' }}
+                            contentArrowStyle={{ borderRight: '7px solid #e7e7e7' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >
-                            <h3 className="vertical-timeline-element-title pb-[1rem]">Bachillerato de Artes</h3>
-                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2]">IES L'Estació (Ontinyent)</h4>
+                            <p className='text-[var(--gris-oscuro)] px-[1rem] pb-[2rem]'>2005 - 2007</p>
+                            <h3 className="vertical-timeline-element-title px-[1rem] pb-[1rem] text-[var(--gris-oscuro)]">Bachillerato de Artes</h3>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem]">IES L'Estació (Ontinyent)</h4>
                         </VerticalTimelineElement>
 
                     </VerticalTimeline>
