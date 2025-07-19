@@ -11,7 +11,7 @@ import Boton from "@/components/buttons/Boton";
 
 export default function Habilidades() {
 
-    const triggerClassname = "border-none bg-[#ffffff] cursor-pointer hover:bg-[#e7e7e7] px-[1rem] py-[0.6rem] rounded-[0.6rem] transition-all duration-300 ease-in-out";
+    const triggerClassname = "border-none bg-[#ffffff] cursor-pointer hover:bg-[#e7e7e7] px-[1rem] py-[1.6rem] rounded-[0.6rem] transition-all duration-300 ease-in-out";
 
     return (
         <div className="w-full flex">
@@ -33,7 +33,7 @@ export default function Habilidades() {
 
                 <div className="flex flex-col gap-[3rem]">
 
-                    <Accordion type="single" collapsible className="w-full flex flex-col gap-[2rem]">
+                    <Accordion type="single" collapsible className="w-full flex flex-col gap-[1rem]">
 
                         <AccordionItem value="item-1" className="w-full flex flex-col gap-[1rem]">
 
