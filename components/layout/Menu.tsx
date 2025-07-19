@@ -25,6 +25,9 @@ export default function Menu({ tipo }: MenuProps) {
                 <a href="/sobre-mi">Sobre mí</a>
             </div>
             <div className={divClassname}>
+                <a href="/habilidades">Habilidades</a>
+            </div>
+            <div className={divClassname}>
                 <a href="/formacion">Formación</a>
             </div>
             <div className={divClassname}>

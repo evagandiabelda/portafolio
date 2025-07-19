@@ -22,13 +22,13 @@ export default function Home() {
           <div className="flex justify-start items-center gap-[1rem]">
             <Boton
               texto="Ver proyectos"
-              enlace="#"
+              enlace="/proyectos"
               tamano="grande"
               jerarquia="secundario"
             />
             <Boton
               texto="Hablemos"
-              enlace="#"
+              enlace="/contacto"
               tamano="grande"
               jerarquia="primario"
             />
