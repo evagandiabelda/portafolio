@@ -217,6 +217,12 @@ export default function Habilidades() {
                                             nivel="Avanzado"
                                         />
                                         <Habilidad
+                                            icono="/icons/icono-escritura.svg"
+                                            nombre="Escritura"
+                                            descripcion="Dominio natural de la ortografía y gramática en Español, Valenciano e Inglés"
+                                            nivel="Avanzado"
+                                        />
+                                        <Habilidad
                                             icono="/icons/icono-fiery.svg"
                                             nombre="Fiery"
                                             descripcion="Gestión de impresión y flujos de trabajo"
@@ -227,12 +233,6 @@ export default function Habilidades() {
                                             nombre="Colorimetría"
                                             descripcion="Uso de herramientas de colorimetría y espectrofotometría"
                                             nivel="Alto"
-                                        />
-                                        <Habilidad
-                                            icono="/icons/icono-coche.svg"
-                                            nombre="Movilidad"
-                                            descripcion="Carnet de conducir B"
-                                            nivel="17 años"
                                         />
                                     </tbody>
                                 </table>

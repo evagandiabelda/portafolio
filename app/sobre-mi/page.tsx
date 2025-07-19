@@ -41,12 +41,6 @@ export default function SobreMi() {
                                 nivel=""
                             />
                             <Habilidad
-                                icono="/icons/icono-english.svg"
-                                nombre="Inglés"
-                                descripcion="Fluidez en inglés técnico, hablado y escrito"
-                                nivel="Avanzado"
-                            />
-                            <Habilidad
                                 icono="/icons/icono-pointer.svg"
                                 nombre="Residencia"
                                 descripcion="Ontinyent (Valencia)"
@@ -57,6 +51,12 @@ export default function SobreMi() {
                                 nombre="Movilidad"
                                 descripcion="Carnet de conducir B"
                                 nivel=""
+                            />
+                            <Habilidad
+                                icono="/icons/icono-english.svg"
+                                nombre="Inglés Técnico"
+                                descripcion="Fluidez en inglés técnico, hablado y escrito"
+                                nivel="Avanzado"
                             />
                         </tbody>
                     </table>
