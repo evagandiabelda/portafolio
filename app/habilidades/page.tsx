@@ -7,6 +7,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import Habilidad from "@/components/other/Habilidad";
+import Boton from "@/components/buttons/Boton";
 
 export default function Habilidades() {
 
@@ -18,15 +19,15 @@ export default function Habilidades() {
             {/* Sidebar */}
 
             <div className="w-1/4 px-[3rem] py-[5rem] bg-[var(--gris-claro)] rounded-tr-[4rem]">
-                <h1>Habili-<br />dades</h1>
+                <h1>Habilidades</h1>
                 <p>Del CMYK al RGB:</p>
-                <p>Larga trayectoria en diseño gráfico, preimpresión y producción.</p>
+                <p>Amplia experiencia en el uso de herramientas de diseño gráfico, preimpresión y producción.</p>
                 <p>En los últimos años, he ampliado mis habilidades mediante la formación en desarrollo web y diseño UX/UI.</p>
             </div>
 
             {/* Contenido */}
 
-            <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[3rem]">
+            <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[2rem]">
 
                 <h2 className="text-[var(--gris-claro)]">Perfil integral</h2>
 
@@ -243,6 +244,21 @@ export default function Habilidades() {
 
                     </Accordion>
 
+                </div>
+
+                <div className="w-full flex justify-end items-center gap-[1rem] pt-[1rem]">
+                    <Boton
+                        texto="Ver Formación"
+                        enlace="/formacion"
+                        tamano="grande"
+                        jerarquia="secundario"
+                    />
+                    <Boton
+                        texto="Contacto"
+                        enlace="/contacto"
+                        tamano="grande"
+                        jerarquia="primario"
+                    />
                 </div>
 
             </div>

@@ -1,17 +1,9 @@
 'use client';
 
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
 import Habilidad from "@/components/other/Habilidad";
 import Boton from "@/components/buttons/Boton";
 
 export default function SobreMi() {
-
-    const triggerClassname = "border-none bg-[#ffffff] cursor-pointer hover:bg-[#e7e7e7] px-[1rem] py-[0.6rem] rounded-[0.6rem] transition-all duration-300 ease-in-out";
 
     return (
         <div className="w-full flex">
@@ -26,7 +18,7 @@ export default function SobreMi() {
 
             {/* Contenido */}
 
-            <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[3rem]">
+            <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[2rem]">
 
                 <h2 className="text-[var(--gris-claro)]">Eva Gandia Belda</h2>
 
@@ -63,7 +55,7 @@ export default function SobreMi() {
 
                 </div>
 
-                <div className="w-full flex justify-end items-center gap-[1rem]">
+                <div className="w-full flex justify-end items-center gap-[1rem] pt-[1rem]">
                     <Boton
                         texto="Ver Habilidades"
                         enlace="/habilidades"
