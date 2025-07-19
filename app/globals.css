@@ -70,14 +70,15 @@ main {
     font-weight: 700;
     font-size: 1.8rem;
     color: var(--brand);
-    line-height: 3rem;
-    margin: 0;
+    line-height: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 
   h4 {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
+    font-weight: 700;
+    font-size: 1rem;
     color: var(--foreground);
     line-height: 1.3rem;
   }

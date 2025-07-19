@@ -1,6 +1,6 @@
 'use client';
 
-import Habilidad from "@/components/other/Habilidad";
+import Habilidad from "@/components/ui/Habilidad";
 import Boton from "@/components/buttons/Boton";
 
 export default function SobreMi() {

@@ -1,5 +1,9 @@
 'use client';
 
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { MdSchool } from 'react-icons/md';
+
 import Boton from "@/components/buttons/Boton";
 
 export default function Formacion() {
@@ -19,10 +23,43 @@ export default function Formacion() {
 
             <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[2rem]">
 
-                <h2 className="text-[var(--gris-claro)]">...</h2>
-
                 <div className="flex flex-col gap-[3rem]">
 
+                    {/* TIMELINE */}
+
+                    <VerticalTimeline>
+
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--education"
+                            date="2022 - actualidad"
+                            iconStyle={{ background: 'var(--brand)', color: '#fff' }}
+                            icon={<MdSchool />}
+                        >
+                            <h3 className="vertical-timeline-element-title pb-[1rem]">Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web</h3>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2]">IES L'Estació (Ontinyent)</h4>
+                        </VerticalTimelineElement>
+
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--education"
+                            date="2008 - 2011"
+                            iconStyle={{ background: 'var(--brand)', color: '#fff' }}
+                            icon={<MdSchool />}
+                        >
+                            <h3 className="vertical-timeline-element-title pb-[1rem]">Licenciatura en Publicidad y Relaciones Públicas</h3>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2]">Universitat d'Alacant</h4>
+                        </VerticalTimelineElement>
+
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--education"
+                            date="2005 - 2007"
+                            iconStyle={{ background: 'var(--brand)', color: '#fff' }}
+                            icon={<MdSchool />}
+                        >
+                            <h3 className="vertical-timeline-element-title pb-[1rem]">Bachillerato de Artes</h3>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2]">IES L'Estació (Ontinyent)</h4>
+                        </VerticalTimelineElement>
+
+                    </VerticalTimeline>
 
                 </div>
 
