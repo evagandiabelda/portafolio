@@ -81,8 +81,8 @@ export default function Trayectoria() {
 
                 <div className="w-full flex justify-end items-center gap-[1rem] pt-[1rem]">
                     <Boton
-                        texto="Ver Trayectoria"
-                        enlace="/trayectoria"
+                        texto="Ver Proyectos"
+                        enlace="/proyectos"
                         tamano="grande"
                         jerarquia="secundario"
                     />
