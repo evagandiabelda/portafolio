@@ -3,9 +3,9 @@ import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
     try {
-        const { mensaje } = await request.json();
+        const { nombre, empresa, email, mensaje } = await request.json();
 
-        if (!mensaje) {
+        if (!nombre || !empresa || !email || !mensaje) {
             return NextResponse.json({ error: "Faltan campos obligatorios." }, { status: 400 });
         }
 
@@ -22,7 +22,10 @@ export async function POST(request: Request) {
             to: process.env.EMAIL_TO,
             subject: "¡Empresa interesada!",
             html: `
-          <p><strong>Mensaje:</strong><br/>${mensaje}</p>
+            <p><strong>Nombre:</strong><br/>${nombre}</p>
+            <p><strong>Empresa:</strong><br/>${empresa}</p>
+            <p><strong>Email:</strong><br/>${email}</p>
+            <p><strong>Mensaje:</strong><br/>${mensaje}</p>
         `,
         });
 

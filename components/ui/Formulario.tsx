@@ -9,13 +9,16 @@ export default function SugerenciasForm() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
+        const nombre = (document.getElementById("nombre") as HTMLInputElement).value;
+        const empresa = (document.getElementById("empresa") as HTMLInputElement).value;
+        const email = (document.getElementById("email") as HTMLInputElement).value;
         const mensaje = (document.getElementById("mensaje") as HTMLTextAreaElement).value;
 
         try {
             const res = await fetch("/api/contacto", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ mensaje }),
+                body: JSON.stringify({ nombre, empresa, email, mensaje }),
             });
 
             if (!res.ok) throw new Error("No se pudo enviar el mensaje.");
