@@ -11,7 +11,7 @@ import Boton from "@/components/buttons/Boton";
 
 export default function Habilidades() {
 
-    const triggerClassname = "border-none bg-[#ffffff] cursor-pointer hover:bg-[#e7e7e7] px-[1rem] py-[1.6rem] rounded-[0.6rem] transition-all duration-300 ease-in-out";
+    const triggerClassname = "border-none bg-transparent cursor-pointer hover:bg-[#e7e7e7] px-[1rem] py-[1.6rem] rounded-[0.6rem] transition-all duration-300 ease-in-out";
 
     return (
         <div className="w-full flex">
@@ -29,7 +29,7 @@ export default function Habilidades() {
 
             <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[2rem]">
 
-                <h2 className="text-[var(--gris-claro)]">Perfil integral</h2>
+                <h2 className="text-[var(--gris-medio)]">Perfil integral</h2>
 
                 <div className="flex flex-col gap-[3rem]">
 

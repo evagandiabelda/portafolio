@@ -27,12 +27,11 @@ export default function Formacion() {
 
                     {/* TIMELINE */}
 
-                    <VerticalTimeline layout={'1-column-left'} lineColor={'var(--brand)'}>
-
+                    <VerticalTimeline layout={'1-column-left'} lineColor={'var(--gris-claro)'}>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: '#e7e7e7', color: '#fff' }}
-                            contentArrowStyle={{ borderRight: '7px solid #e7e7e7' }}
+                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
+                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >
@@ -43,8 +42,8 @@ export default function Formacion() {
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: '#e7e7e7', color: '#fff' }}
-                            contentArrowStyle={{ borderRight: '7px solid #e7e7e7' }}
+                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
+                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >
@@ -55,8 +54,8 @@ export default function Formacion() {
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: '#e7e7e7', color: '#fff' }}
-                            contentArrowStyle={{ borderRight: '7px solid #e7e7e7' }}
+                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
+                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >

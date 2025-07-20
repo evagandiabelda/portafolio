@@ -8,7 +8,7 @@ export default function Home() {
     <div className="w-full flex flex-col items-center px-[3rem] text-center mx-auto">
 
       {/* Hero Banner */}
-      <div className="w-full flex justify-start items-center text-left bg-[url('/imgs/hero-banner-fondo.webp')] bg-cover bg-center px-[3rem] py-[1rem] no-repeat bg-fixed relative">
+      <div className="w-full h-full flex justify-start items-center text-left bg-[url('/imgs/hero-banner-fondo.webp')] bg-cover bg-center px-[3rem] py-[1rem] no-repeat bg-fixed relative">
 
         <div className="w-full h-full flex flex-row justify-center items-center gap-[2em] px-[8rem] py-[2rem]">
 

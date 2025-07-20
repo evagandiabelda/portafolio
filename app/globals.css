@@ -6,12 +6,9 @@
 /* ------------ COLORES ------------ */
 
 :root {
-  --verde-osc: #6F988B;
-  --verde-cla: #ACC9BD;
-  --crema: #FAC999;
-  --naranja-osc: #B24201;
-  --naranja-cla: #E6790D;
-  --gris-claro: #c9c8c8;
+  --brand: #B24201;
+  --gris-claro: #e2e2e2;
+  --gris-medio: #c9c8c8;
   --gris-oscuro: #646161;
 }
 
@@ -25,12 +22,12 @@
 /* MODO CLARO: */
 :root {
   --background: #f7f7f7;
-  --foreground: #171717;
+  --foreground: #313131;
 }
 
 /* MODO OSCURO: */
 .dark {
-  --background: #171717;
+  --background: #313131;
   --foreground: #f7f7f7;
 }
 
@@ -45,7 +42,7 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 58px);
 }
 
 /* ------------ ESTILOS GLOBALES ------------ */
