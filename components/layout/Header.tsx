@@ -14,7 +14,9 @@ export default function Header() {
             {/* Caja Principal */}
             <div className="flex items-center justify-between gap-9 px-[2rem]">
                 {/* Logo */}
-                <Logo modo='claro' />
+                <div className='hover:scale-[1.02] transition ease duration-300 cursor-pointer'>
+                    <Logo modo='claro' />
+                </div>
                 {/* Menú */}
                 <Menu tipo="normal" />
                 {/* <Menu tipo="header" /> */}

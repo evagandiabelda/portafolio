@@ -29,8 +29,6 @@ export default function Habilidades() {
 
             <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[2rem]">
 
-                <h2 className="text-[var(--gris-medio)]">Perfil integral</h2>
-
                 <div className="flex flex-col gap-[3rem]">
 
                     <Accordion type="single" collapsible className="w-full flex flex-col gap-[1rem]">

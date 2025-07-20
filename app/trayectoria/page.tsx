@@ -32,8 +32,8 @@ export default function Trayectoria() {
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
-                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
+                            contentStyle={{ background: '#fff', color: '#fff', borderRadius: '30px', boxShadow: '5px 5px 20px rgba(0,0,0,0.1)' }}
+                            contentArrowStyle={{ borderRight: '7px solid #fff', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdWork />}
                         >
@@ -50,8 +50,8 @@ export default function Trayectoria() {
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
-                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
+                            contentStyle={{ background: '#fff', color: '#fff', borderRadius: '30px', boxShadow: '5px 5px 20px rgba(0,0,0,0.1)' }}
+                            contentArrowStyle={{ borderRight: '7px solid #fff', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdWork />}
                         >
@@ -65,8 +65,8 @@ export default function Trayectoria() {
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
-                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
+                            contentStyle={{ background: '#fff', color: '#fff', borderRadius: '30px', boxShadow: '5px 5px 20px rgba(0,0,0,0.1)' }}
+                            contentArrowStyle={{ borderRight: '7px solid #fff', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdWork />}
                         >

@@ -3,21 +3,19 @@
 /* Fuente DM Sans: */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-/* ------------ COLORES ------------ */
-
-:root {
-  --brand: #B24201;
-  --gris-claro: #e2e2e2;
-  --gris-medio: #c9c8c8;
-  --gris-oscuro: #646161;
-}
-
 /* ------------ TAILWIND ----------- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ------------ ESTILOS BASE ------------ */
+/* ------------ COLORES ------------ */
+
+:root {
+  --brand: #B24201;
+  --gris-claro: #e6e2df;
+  --gris-medio: #c7c1bd;
+  --gris-oscuro: #646161;
+}
 
 /* MODO CLARO: */
 :root {

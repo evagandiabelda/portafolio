@@ -29,7 +29,7 @@ export default function Contacto() {
                     <div className="flex flex-row justify-stretch items-stretch gap-[1.5rem]">
 
                         {/* CARD TEL */}
-                        <div className="flex flex-row justify-start items-center gap-[1.6rem] bg-[#E8C6B2] rounded-full p-[0.6rem] hover:scale-[1.02] transition ease duration-300 cursor-pointer">
+                        <div className="flex flex-row justify-start items-center gap-[1.6rem] bg-[#fff] rounded-full shadow-[5px_5px_20px_rgba(0,0,0,0.1)] p-[0.6rem] hover:scale-[1.02] transition ease duration-300 cursor-pointer">
                             <Image
                                 src="/icons/icono-tel.svg"
                                 alt="Icono Teléfono"
@@ -40,7 +40,7 @@ export default function Contacto() {
                         </div>
 
                         {/* CARD EMAIL */}
-                        <div className="flex flex-row justify-start items-center gap-[1.6rem] bg-[#E8C6B2] rounded-full p-[0.6rem] hover:scale-[1.02] transition ease duration-300 cursor-pointer">
+                        <div className="flex flex-row justify-start items-center gap-[1.6rem] bg-[#fff] rounded-full shadow-[5px_5px_20px_rgba(0,0,0,0.1)] p-[0.6rem] hover:scale-[1.02] transition ease duration-300 cursor-pointer">
                             <Image
                                 src="/icons/icono-email.svg"
                                 alt="Icono Email"

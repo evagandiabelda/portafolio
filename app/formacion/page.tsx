@@ -30,38 +30,38 @@ export default function Formacion() {
                     <VerticalTimeline layout={'1-column-left'} lineColor={'var(--gris-claro)'}>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
-                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
+                            contentStyle={{ background: '#fff', color: '#fff', borderRadius: '30px', boxShadow: '5px 5px 20px rgba(0,0,0,0.1)' }}
+                            contentArrowStyle={{ borderRight: '7px solid #fff', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >
                             <p className='text-[var(--gris-oscuro)] px-[1rem] pb-[2rem]'>2022 - actualidad</p>
                             <h3 className="vertical-timeline-element-title px-[1rem] pb-[1rem] text-[var(--gris-oscuro)]">Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web</h3>
-                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem]">IES L'Estació (Ontinyent)</h4>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem] py-[0.5rem]">IES L'Estació (Ontinyent)</h4>
                         </VerticalTimelineElement>
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
-                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
+                            contentStyle={{ background: '#fff', color: '#fff', borderRadius: '30px', boxShadow: '5px 5px 20px rgba(0,0,0,0.1)' }}
+                            contentArrowStyle={{ borderRight: '7px solid #fff', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >
                             <p className='text-[var(--gris-oscuro)] px-[1rem] pb-[2rem]'>2008 - 2011</p>
                             <h3 className="vertical-timeline-element-title px-[1rem] pb-[1rem] text-[var(--gris-oscuro)]">Licenciatura en Publicidad y Relaciones Públicas</h3>
-                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem]">Universitat d'Alacant</h4>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem] py-[0.5rem]">Universitat d'Alacant</h4>
                         </VerticalTimelineElement>
 
                         <VerticalTimelineElement
                             className="vertical-timeline-element--education"
-                            contentStyle={{ background: 'var(--gris-claro)', color: '#fff', borderRadius: '30px' }}
-                            contentArrowStyle={{ borderRight: '7px solid var(--gris-claro)', marginTop: '10px' }}
+                            contentStyle={{ background: '#fff', color: '#fff', borderRadius: '30px', boxShadow: '5px 5px 20px rgba(0,0,0,0.1)' }}
+                            contentArrowStyle={{ borderRight: '7px solid #fff', marginTop: '10px' }}
                             iconStyle={{ background: 'var(--brand)', color: '#fff' }}
                             icon={<MdSchool />}
                         >
                             <p className='text-[var(--gris-oscuro)] px-[1rem] pb-[2rem]'>2005 - 2007</p>
                             <h3 className="vertical-timeline-element-title px-[1rem] pb-[1rem] text-[var(--gris-oscuro)]">Bachillerato de Artes</h3>
-                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem]">IES L'Estació (Ontinyent)</h4>
+                            <h4 className="vertical-timeline-element-subtitle text-[#b2b2b2] px-[1rem] py-[0.5rem]">IES L'Estació (Ontinyent)</h4>
                         </VerticalTimelineElement>
 
                     </VerticalTimeline>
