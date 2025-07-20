@@ -19,14 +19,14 @@
 
 /* MODO CLARO: */
 :root {
-  --background: #f7f7f7;
+  --background: #f5f2f0;
   --foreground: #313131;
 }
 
 /* MODO OSCURO: */
 .dark {
   --background: #313131;
-  --foreground: #f7f7f7;
+  --foreground: #f5f2f0;
 }
 
 body {
