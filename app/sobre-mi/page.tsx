@@ -10,7 +10,7 @@ export default function SobreMi() {
 
             {/* Sidebar */}
 
-            <div className="w-1/4 px-[3rem] py-[5rem] bg-[var(--gris-claro)] rounded-tr-[4rem]">
+            <div className="w-1/4 px-[3rem] py-[5rem] bg-[var(--verde-cla)] rounded-tr-[4rem]">
                 <h1>Sobre mí</h1>
                 <p>Diseñadora gráfica de vocación, desarrolladora web por evolución. Tras más de 12 años dedicada a las Artes Gráficas, decidí ampliar horizontes y sumergirme en el universo digital.</p>
                 <p>Me gusta cuidar cada detalle, desde el primer boceto hasta el último píxel. Disfruto combinando lo técnico con lo visual, lo funcional con lo estético.</p>

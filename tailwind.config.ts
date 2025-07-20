@@ -74,7 +74,11 @@ export default {
                     to: {
                         height: '0'
                     }
-                }
+                },
+                subtleBounce: {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-6%)' },
+                },
             },
             animation: {
                 // Animación Menú Desplegable:
@@ -82,7 +86,8 @@ export default {
                 'slide-up': 'slide-up 300ms ease-in-out forwards',
                 // Animación Accordion:
                 'accordion-down': 'accordion-down 0.2s ease-out',
-                'accordion-up': 'accordion-up 0.2s ease-out'
+                'accordion-up': 'accordion-up 0.2s ease-out',
+                subtleBounce: 'subtleBounce 0.4s ease',
             }
         }
     },

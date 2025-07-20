@@ -9,7 +9,7 @@ interface MenuProps {
 export default function Menu({ tipo }: MenuProps) {
 
     let navClassname = "";
-    const divClassname = "py-[4px] hover:border-b hover:border-b-2 hover:border-[var(--brand)] cursor-pointer transition ease-in-out";
+    const divClassname = "py-[4px] hover:border-b hover:border-b-2 hover:border-[var(--verde-cla)] cursor-pointer transition ease-in-out";
 
     if (tipo === "normal") {
         navClassname = "flex mobile:hidden laptop:flex items-center gap-[3rem]";

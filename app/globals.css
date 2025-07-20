@@ -6,7 +6,11 @@
 /* ------------ COLORES ------------ */
 
 :root {
-  --brand: #EA5153;
+  --verde-osc: #6F988B;
+  --verde-cla: #ACC9BD;
+  --crema: #FAC999;
+  --naranja-osc: #B24201;
+  --naranja-cla: #E6790D;
   --gris-claro: #c9c8c8;
   --gris-oscuro: #646161;
 }
@@ -20,14 +24,14 @@
 
 /* MODO CLARO: */
 :root {
-  --background: #ffffff;
+  --background: #f7f7f7;
   --foreground: #171717;
 }
 
 /* MODO OSCURO: */
 .dark {
   --background: #171717;
-  --foreground: #ffffff;
+  --foreground: #f7f7f7;
 }
 
 body {
