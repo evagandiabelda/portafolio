@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Formulario from "@/components/ui/Formulario";
 
 export default function Contacto() {
 
@@ -29,7 +30,7 @@ export default function Contacto() {
                     <div className="flex flex-row justify-stretch items-stretch gap-[1.5rem]">
 
                         {/* CARD TEL */}
-                        <div className="flex flex-row justify-start items-center gap-[1.6rem] bg-[var(--brand)] rounded-full shadow-[2px_6px_20px_rgba(0,0,0,0.25)] p-[0.6rem] hover:scale-[1.02] hover:opacity-[0.9] transition ease duration-300 cursor-pointer">
+                        <div className="w-full flex flex-row justify-start items-center gap-[1.6rem] bg-[var(--brand)] rounded-full shadow-[2px_6px_20px_rgba(0,0,0,0.25)] p-[0.6rem] hover:scale-[1.02] hover:opacity-[0.9] transition ease duration-300 cursor-pointer">
                             <Image
                                 src="/icons/icono-tel.svg"
                                 alt="Icono Teléfono"
@@ -41,7 +42,7 @@ export default function Contacto() {
                         </div>
 
                         {/* CARD EMAIL */}
-                        <div className="flex flex-row justify-start items-center gap-[1.6rem] bg-[var(--brand)] rounded-full shadow-[2px_6px_20px_rgba(0,0,0,0.25)] p-[0.6rem] hover:scale-[1.02] hover:opacity-[0.9] transition ease duration-300 cursor-pointer">
+                        <div className="w-full flex flex-row justify-start items-center gap-[1.6rem] bg-[var(--brand)] rounded-full shadow-[2px_6px_20px_rgba(0,0,0,0.25)] p-[0.6rem] hover:scale-[1.02] hover:opacity-[0.9] transition ease duration-300 cursor-pointer">
                             <Image
                                 src="/icons/icono-email.svg"
                                 alt="Icono Email"
@@ -54,42 +55,11 @@ export default function Contacto() {
 
                     </div>
 
-                    <div className="mt-[3rem]">
+                    <div className="mt-[4rem]">
 
-                        <p>O puedes enviarme un mensaje:</p>
+                        <p className="p-[0.6rem]">O puedes enviarme un mensaje:</p>
 
-                        <form className="flex flex-col gap-[1.5rem] p-[1.5rem] bg-[#fff] rounded-[30px] shadow-[2px_6px_20px_rgba(0,0,0,0.25)]">
-
-                            <input
-                                type="text"
-                                placeholder="Nombre"
-                                className="w-full p-[0.8rem] rounded-full bg-[var(--gris-claro)] border-[1px] border-[var(--gris-medio)] focus:outline-none focus:border-[var(--brand)] transition ease duration-300"
-                            />
-
-                            <input
-                                type="text"
-                                placeholder="Empresa"
-                                className="w-full p-[0.8rem] rounded-full bg-[var(--gris-claro)] border-[1px] border-[var(--gris-medio)] focus:outline-none focus:border-[var(--brand)] transition ease duration-300"
-                            />
-
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                className="w-full p-[0.8rem] rounded-full bg-[var(--gris-claro)] border-[1px] border-[var(--gris-medio)] focus:outline-none focus:border-[var(--brand)] transition ease duration-300"
-                            />
-
-                            <textarea
-                                placeholder="Mensaje"
-                                className="w-full p-[0.8rem] rounded-lg bg-[var(--gris-claro)] border-[1px] border-[var(--gris-medio)] focus:outline-none focus:border-[var(--brand)] transition ease duration-300 h-[10rem]"
-                            ></textarea>
-
-                            <button
-                                type="submit"
-                                className="w-full py-[0.8rem] bg-[var(--brand)] text-white rounded-full hover:opacity-90 transition ease duration-300"
-                            >
-                                Enviar
-                            </button>
-                        </form>
+                        <Formulario />
 
                     </div>
 
