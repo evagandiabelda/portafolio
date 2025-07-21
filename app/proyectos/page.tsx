@@ -45,7 +45,7 @@ export default function Proyectos() {
                         <div key={index}>
                             {/* Miniatura */}
                             <ProyectoMiniatura
-                                imagen={proyecto.imagen}
+                                imagen={proyecto.imagen1}
                                 titulo={proyecto.titulo}
                                 onClick={() => {
                                     setProyectoActivo(index);
@@ -55,13 +55,15 @@ export default function Proyectos() {
 
                             {/* Popup solo si es el proyecto activo */}
                             {proyectoActivo === index && popupAbierto && (
-                                <Proyecto onClose={cerrarPopup}>
-                                    <img
-                                        src="/imgs/proyectos/proyecto1.jpg"
-                                        alt="Proyecto"
-                                        className="max-w-full max-h-[70vh] rounded-[12px]"
-                                    />
-                                </Proyecto>
+                                <Proyecto
+                                    titulo={proyecto.titulo}
+                                    imagen1={proyecto.imagen1}
+                                    descripcion={proyecto.descripcion}
+                                    {...(proyecto.imagen2 && { imagen2: proyecto.imagen2 })}
+                                    {...(proyecto.imagen3 && { imagen3: proyecto.imagen3 })}
+                                    {...(proyecto.imagen4 && { imagen4: proyecto.imagen4 })}
+                                    onClose={cerrarPopup}
+                                />
                             )}
                         </div>
                     ))}
