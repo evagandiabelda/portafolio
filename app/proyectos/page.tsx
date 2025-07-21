@@ -1,13 +1,21 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { proyectos } from "@/data/proyectos";
+import Image from "next/image";
 import Masonry from "react-masonry-css";
 import ProyectoMiniatura from "@/components/ui/ProyectoMiniatura";
 import Proyecto from "@/components/ui/Proyecto";
 import Boton from "@/components/buttons/Boton";
 
 export default function Proyectos() {
+
+    // Mezcla aleatoria del array solo una vez al montar
+    const [proyectosAleatorios, setProyectosAleatorios] = useState(proyectos);
+    useEffect(() => {
+        const proyectosBarajados = [...proyectos].sort(() => Math.random() - 0.5);
+        setProyectosAleatorios(proyectosBarajados);
+    }, []);
 
     const [proyectoActivo, setProyectoActivo] = useState<number | null>(null);
     const [popupAbierto, setPopupAbierto] = useState(false);
@@ -36,47 +44,82 @@ export default function Proyectos() {
 
             {/* Contenido */}
 
-            <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[2rem]">
+            <div className="w-3/4 px-[3rem] py-[5rem] flex flex-col gap-[5rem]">
 
-                <Masonry
-                    breakpointCols={{
-                        default: 5, // Ordenadores grandes
-                        1600: 4, // Ordenadores pequeños
-                        1024: 3, // Tablets
-                        768: 2, // Móviles grandes
-                        500: 1, // Móviles pequeños
-                    }}
-                    className="w-full flex"
-                    columnClassName="masonry-column"
-                >
+                <div className="flex flex-col gap-[3rem]">
 
-                    {proyectos.map((proyecto, index) => (
-                        <div key={index}>
-                            {/* Miniatura */}
-                            <ProyectoMiniatura
-                                imagen={proyecto.imagen1}
-                                titulo={proyecto.titulo}
-                                onClick={() => {
-                                    setProyectoActivo(index);
-                                    abrirPopup();
-                                }}
-                            />
+                    <h3>Proyectos destacados</h3>
 
-                            {/* Popup solo si es el proyecto activo */}
-                            {proyectoActivo === index && popupAbierto && (
-                                <Proyecto
+                    <table className="w-full border-collapse">
+                        <tbody>
+                            <tr className="border-y border-y-1 border-[var(--gris-claro)]">
+                                <td className="px-[1rem] py-[1rem] align-middle">
+                                    <Image
+                                        src='/imgs/proyectos/Spiced/img1.jpg'
+                                        alt={`Miniatura del proyecto Spiced`}
+                                        width={120}
+                                        height={80}
+                                        className="object-cover rounded-[20px]"
+                                    />
+                                </td>
+                                <td className="px-[0.2rem] py-[1rem] align-middle">
+                                    <strong>Spiced</strong>
+                                </td>
+                                <td className="px-[0.2rem] py-[1rem] align-middle">
+                                    Aplicación web (proyecto final DAW)
+                                </td>
+                                <td className="px-[0.2rem] py-[1rem] align-middle">
+                                    aaa
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+                <div className="flex flex-col gap-[3rem]">
+
+                    <h3>Otros proyectos</h3>
+
+                    <Masonry
+                        breakpointCols={{
+                            default: 3, // Ordenadores grandes
+                            1600: 3, // Ordenadores pequeños
+                            1024: 3, // Tablets
+                            768: 2, // Móviles grandes
+                            500: 1, // Móviles pequeños
+                        }}
+                        className="w-full flex"
+                        columnClassName="masonry-column"
+                    >
+
+                        {proyectosAleatorios.map((proyecto, index) => (
+                            <div key={index}>
+                                {/* Miniatura */}
+                                <ProyectoMiniatura
+                                    imagen={proyecto.imagenes[0]}
                                     titulo={proyecto.titulo}
-                                    imagen1={proyecto.imagen1}
-                                    descripcion={proyecto.descripcion}
-                                    {...(proyecto.imagen2 && { imagen2: proyecto.imagen2 })}
-                                    {...(proyecto.imagen3 && { imagen3: proyecto.imagen3 })}
-                                    {...(proyecto.imagen4 && { imagen4: proyecto.imagen4 })}
-                                    onClose={cerrarPopup}
+                                    onClick={() => {
+                                        setProyectoActivo(index);
+                                        abrirPopup();
+                                    }}
                                 />
-                            )}
-                        </div>
-                    ))}
-                </Masonry>
+
+                                {/* Popup solo si es el proyecto activo */}
+                                {proyectoActivo === index && popupAbierto && (
+                                    <Proyecto
+                                        titulo={proyecto.titulo}
+                                        descripcion={proyecto.descripcion}
+                                        imagenes={proyecto.imagenes}
+                                        onClose={cerrarPopup}
+                                    />
+                                )}
+                            </div>
+                        ))}
+                    </Masonry>
+
+                </div>
 
             </div>
 
