@@ -26,7 +26,7 @@ export default function RootLayout({
         {/* Versión móvil (temporal) */}
 
         <div className="mobile-only min-h-screen flex flex-col items-center justify-center px-[4rem] text-center">
-          <p className="text-[1.4rem] font-[600]">La versión móvil de esta web está en construcción.</p>
+          <p className="text-[1.4rem] font-[600]">La versión responsive de esta web está en construcción.</p>
           <p>Por el momento, puedes verla desde tu ordenador.</p>
           <p>¡Gracias por tu comprensión!</p>
         </div>
