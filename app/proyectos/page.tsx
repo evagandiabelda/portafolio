@@ -53,23 +53,44 @@ export default function Proyectos() {
                     <table className="w-full border-collapse">
                         <tbody>
                             <tr className="border-y border-y-1 border-[var(--gris-claro)]">
-                                <td className="px-[1rem] py-[1rem] align-middle">
-                                    <Image
-                                        src='/imgs/proyectos/Spiced/img1.jpg'
-                                        alt={`Miniatura del proyecto Spiced`}
-                                        width={120}
-                                        height={80}
-                                        className="object-cover rounded-[20px]"
-                                    />
+                                <td className="w-[160px] px-[1rem] py-[1rem] align-middle">
+                                    <a href="https://spiced-omega.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                        <Image
+                                            src='/imgs/proyectos/Spiced/img1.jpg'
+                                            alt={`Miniatura del proyecto Spiced`}
+                                            width={120}
+                                            height={80}
+                                            className="object-cover rounded-[20px] hover:scale-[1.05] transition-transform duration-[0.3s] ease-in-out"
+                                        />
+                                    </a>
                                 </td>
-                                <td className="px-[0.2rem] py-[1rem] align-middle">
+                                <td className="px-[0.2rem] py-[1rem]">
                                     <strong>Spiced</strong>
                                 </td>
-                                <td className="px-[0.2rem] py-[1rem] align-middle">
+                                <td className="px-[0.2rem] py-[1rem]">
                                     Aplicación web (proyecto final DAW)
                                 </td>
                                 <td className="px-[0.2rem] py-[1rem] align-middle">
-                                    aaa
+                                    <div className="flex flex-row justify-center items-center gap-[2rem]">
+                                        <a href="https://www.figma.com/design/ca0OBF9ReLe7KEcQZzvoMv/Spiced" target="_blank" rel="noopener noreferrer">
+                                            <Image
+                                                src='/icons/icono-figma.svg'
+                                                alt={`Ver prototipado en Figma`}
+                                                width={30}
+                                                height={30}
+                                                className="object-contain hover:scale-[1.1] transition-transform duration-[0.3s] ease-in-out"
+                                            />
+                                        </a>
+                                        <a href="https://github.com/evagandiabelda/spiced" target="_blank" rel="noopener noreferrer">
+                                            <Image
+                                                src='/icons/icono-github.svg'
+                                                alt={`Ver repositorio en GitHub`}
+                                                width={30}
+                                                height={30}
+                                                className="object-contain hover:scale-[1.1] transition-transform duration-[0.3s] ease-in-out"
+                                            />
+                                        </a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
