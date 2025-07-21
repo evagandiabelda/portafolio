@@ -1,10 +1,19 @@
 'use client';
 
+import { useState } from "react";
+import { proyectos } from "@/data/proyectos";
 import Masonry from "react-masonry-css";
 import ProyectoMiniatura from "@/components/ui/ProyectoMiniatura";
+import Proyecto from "@/components/ui/Proyecto";
 import Boton from "@/components/buttons/Boton";
 
 export default function Proyectos() {
+
+    const [proyectoActivo, setProyectoActivo] = useState<number | null>(null);
+    const [popupAbierto, setPopupAbierto] = useState(false);
+
+    const abrirPopup = () => setPopupAbierto(true);
+    const cerrarPopup = () => setPopupAbierto(false);
 
     return (
         <div className="w-full flex">
@@ -31,26 +40,31 @@ export default function Proyectos() {
                     className="w-full flex"
                     columnClassName="masonry-column"
                 >
-                    <ProyectoMiniatura
-                        imagen="/imgs/proyectos/proyecto1.jpg"
-                        titulo="Proyecto 1"
-                    />
-                    <ProyectoMiniatura
-                        imagen="/imgs/proyectos/proyecto1.jpg"
-                        titulo="Proyecto 2"
-                    />
-                    <ProyectoMiniatura
-                        imagen="/imgs/proyectos/proyecto1.jpg"
-                        titulo="Proyecto 3"
-                    />
-                    <ProyectoMiniatura
-                        imagen="/imgs/proyectos/proyecto1.jpg"
-                        titulo="Proyecto 4"
-                    />
-                    <ProyectoMiniatura
-                        imagen="/imgs/proyectos/proyecto1.jpg"
-                        titulo="Proyecto 5"
-                    />
+
+                    {proyectos.map((proyecto, index) => (
+                        <div key={index}>
+                            {/* Miniatura */}
+                            <ProyectoMiniatura
+                                imagen={proyecto.imagen}
+                                titulo={proyecto.titulo}
+                                onClick={() => {
+                                    setProyectoActivo(index);
+                                    abrirPopup();
+                                }}
+                            />
+
+                            {/* Popup solo si es el proyecto activo */}
+                            {proyectoActivo === index && popupAbierto && (
+                                <Proyecto onClose={cerrarPopup}>
+                                    <img
+                                        src="/imgs/proyectos/proyecto1.jpg"
+                                        alt="Proyecto"
+                                        className="max-w-full max-h-[70vh] rounded-[12px]"
+                                    />
+                                </Proyecto>
+                            )}
+                        </div>
+                    ))}
                 </Masonry>
 
                 <div className="w-full flex justify-end items-center gap-[1rem] pt-[1rem]">

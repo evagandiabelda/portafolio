@@ -5,13 +5,15 @@ import Image from "next/image";
 interface ProyectoMiniaturaProps {
     imagen: string;
     titulo: string;
+    onClick: () => void;
 }
 
-export default function ProyectoMiniatura({ imagen, titulo }: ProyectoMiniaturaProps) {
+export default function ProyectoMiniatura({ imagen, titulo, onClick }: ProyectoMiniaturaProps) {
     return (
         <div
             className="relative aspect-square rounded-[26px] m-[0.6rem] overflow-hidden group bg-cover bg-center cursor-pointer"
             style={{ backgroundImage: `url(${imagen})` }}
+            onClick={onClick}
         >
             {/* Degradado al pasar el ratón */}
             <div className="thumbnail-overlay" />
