@@ -27,31 +27,35 @@ export default function Contacto() {
                         <h2 className="text-[var(--gris-medio)]">Hablemos</h2>
                     </div>
 
-                    <div className="flex flex-row justify-stretch items-stretch gap-[1.5rem]">
+                    <div className="flex flex-row justify-stretch items-stretch gap-[3rem]">
 
                         {/* CARD TEL */}
-                        <div className="w-full flex flex-row justify-start items-center gap-[1.6rem] bg-[var(--brand)] rounded-full shadow-[2px_6px_20px_rgba(0,0,0,0.25)] p-[0.6rem] hover:scale-[1.02] hover:opacity-[0.9] transition ease duration-300 cursor-pointer">
-                            <Image
-                                src="/icons/icono-tel.svg"
-                                alt="Icono Teléfono"
-                                width={36}
-                                height={36}
-                                className="opacity-[0.5]"
-                            />
-                            <p className="text-[1.1rem] text-[var(--background)] font-[600] m-[0px] pr-[1.6rem] opacity-[0.9]">(+34) 660 201 670</p>
-                        </div>
+                        <a href="tel:+34660201670">
+                            <div className="w-full flex flex-row justify-start items-center gap-[1.6rem] bg-[var(--brand)] rounded-full shadow-[2px_6px_20px_rgba(0,0,0,0.25)] p-[0.6rem] hover:scale-[1.02] hover:opacity-[0.9] transition ease duration-300 cursor-pointer">
+                                <Image
+                                    src="/icons/icono-tel.svg"
+                                    alt="Icono Teléfono"
+                                    width={36}
+                                    height={36}
+                                    className="opacity-[0.5]"
+                                />
+                                <p className="text-[1.1rem] text-[var(--background)] font-[600] m-[0px] pr-[1.6rem] opacity-[0.9]">(+34) 660 201 670</p>
+                            </div>
+                        </a>
 
                         {/* CARD EMAIL */}
-                        <div className="w-full flex flex-row justify-start items-center gap-[1.6rem] bg-[var(--brand)] rounded-full shadow-[2px_6px_20px_rgba(0,0,0,0.25)] p-[0.6rem] hover:scale-[1.02] hover:opacity-[0.9] transition ease duration-300 cursor-pointer">
-                            <Image
-                                src="/icons/icono-email.svg"
-                                alt="Icono Email"
-                                width={36}
-                                height={36}
-                                className="opacity-[0.5]"
-                            />
-                            <p className="text-[1.1rem] text-[var(--background)] font-[600] m-[0px] pr-[1.6rem] opacity-[0.9]">evagandiabelda@gmail.com</p>
-                        </div>
+                        <a href="mailto:evagandiabelda@gmail.com">
+                            <div className="w-full flex flex-row justify-start items-center gap-[1.6rem] bg-[var(--brand)] rounded-full shadow-[2px_6px_20px_rgba(0,0,0,0.25)] p-[0.6rem] hover:scale-[1.02] hover:opacity-[0.9] transition ease duration-300 cursor-pointer">
+                                <Image
+                                    src="/icons/icono-email.svg"
+                                    alt="Icono Email"
+                                    width={36}
+                                    height={36}
+                                    className="opacity-[0.5]"
+                                />
+                                <p className="text-[1.1rem] text-[var(--background)] font-[600] m-[0px] pr-[1.6rem] opacity-[0.9]">evagandiabelda@gmail.com</p>
+                            </div>
+                        </a>
 
                     </div>
 
