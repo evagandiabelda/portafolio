@@ -22,7 +22,16 @@ export default function Proyectos() {
 
             <div className="w-1/4 px-[3rem] py-[5rem] bg-[var(--gris-claro)] rounded-tr-[4rem]">
                 <h1>Mis proyectos</h1>
-                <p>...</p>
+                <p>Aquí encontrarás una muestra de los proyectos que he ido creando a lo largo de mi camino. Diseño gráfico, desarrollo web y mucho mimo detrás de cada uno.</p>
+                <div className="pt-[2rem]">
+                    <p>¿Crees que mi perfil es interesante para tu empresa?</p>
+                    <Boton
+                        texto="Hablemos"
+                        enlace="/contacto"
+                        tamano="grande"
+                        jerarquia="primario"
+                    />
+                </div>
             </div>
 
             {/* Contenido */}
@@ -68,15 +77,6 @@ export default function Proyectos() {
                         </div>
                     ))}
                 </Masonry>
-
-                <div className="w-full flex justify-end items-center gap-[1rem] pt-[1rem]">
-                    <Boton
-                        texto="Contacto"
-                        enlace="/contacto"
-                        tamano="grande"
-                        jerarquia="primario"
-                    />
-                </div>
 
             </div>
 
