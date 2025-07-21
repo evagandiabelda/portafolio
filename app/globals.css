@@ -187,3 +187,35 @@ select:active, select:focus {
     transition: background-color 5000s ease-in-out 0s !important;
     border: none !important;
   }
+
+  /* Estilo para la Masonry de Proyectos */
+
+  .thumbnail-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to top, rgba(39, 39, 42, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.group:hover .thumbnail-overlay {
+  opacity: 1;
+}
+
+.thumbnail-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: white;
+  font-size: 1.125rem; /* equivale a text-lg */
+  font-weight: 600; /* equivale a font-semibold */
+  z-index: 10;
+  opacity: 0;
+}
+
+.group:hover .thumbnail-title {
+  opacity: 1;
+}
