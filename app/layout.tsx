@@ -22,12 +22,26 @@ export default function RootLayout({
     <html lang="es">
 
       <body className="antialiased min-h-screen m-0">
-        <Header />
-        <main className="flex flex-grow">
-          {children}
-          <Toaster position="bottom-right" />
-        </main>
-        <Footer />
+
+        {/* Versión móvil (temporal) */}
+
+        <div className="mobile-only min-h-screen flex flex-col items-center justify-center px-[4rem] text-center">
+          <p className="text-[1.4rem] font-[600]">La versión móvil de esta web está en construcción.</p>
+          <p>Por el momento, puedes verla desde tu ordenador.</p>
+          <p>¡Gracias por tu comprensión!</p>
+        </div>
+
+        {/* Versión de escritorio */}
+
+        <div className="desktop-only">
+          <Header />
+          <main className="flex flex-grow">
+            {children}
+            <Toaster position="bottom-right" />
+          </main>
+          <Footer />
+        </div>
+
       </body>
 
     </html>
