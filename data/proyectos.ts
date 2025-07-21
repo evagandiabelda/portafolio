@@ -13,5 +13,4 @@ export const proyectos = [
         imagen3: "/imgs/proyectos/proyecto1.jpg",
         imagen4: "/imgs/proyectos/proyecto1.jpg",
     },
-    // ...
 ];

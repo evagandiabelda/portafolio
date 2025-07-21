@@ -148,36 +148,6 @@ main {
     color: var(--gris-oscuro);
   }
 
-  /* Estilo personalizado para Selects: */
-
-select {
-  appearance: none;
-  -webkit-appearance: none; /* Compatibilidad con Safari */
-  -moz-appearance: none; /* Compatibilidad con Firefox */
-  position: relative;
-  font-size: 1rem;
-  font-weight: normal;
-  color: var(--gris2);
-  padding: 0.5rem 1.7rem;
-  margin: 0;
-  border: 2px solid var(--blanco);
-  border-radius: 0.8rem;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"%3E%3Cpath fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /%3E%3C/svg%3E');
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 1.3rem;
-  cursor: pointer;
-}
-
-select:hover {
-  border: 2px solid var(--gris2);
-
-}
-
-select:active, select:focus {
-  border: 2px solid var(--brand1);
-}
-
   /* Estilo personalizado para Inputs: */
 
   input:-webkit-autofill,
@@ -190,7 +160,7 @@ select:active, select:focus {
 
   /* Estilo para la Masonry de Proyectos */
 
-  .thumbnail-overlay {
+.thumbnail-overlay {
   position: absolute;
   inset: 0;
   background-image: linear-gradient(to top, rgba(39, 39, 42, 0.8), transparent);
@@ -210,8 +180,8 @@ select:active, select:focus {
   right: 0;
   padding: 1rem;
   color: white;
-  font-size: 1.125rem; /* equivale a text-lg */
-  font-weight: 600; /* equivale a font-semibold */
+  font-size: 1.125rem;
+  font-weight: 600;
   z-index: 10;
   opacity: 0;
 }
@@ -223,18 +193,17 @@ select:active, select:focus {
 /* Oculta todas las barras de scroll horizontales y verticales */
 
 *::-webkit-scrollbar {
-  display: none; /* Oculta la barra de scroll en navegadores WebKit (Chrome, Safari, etc.) */
+  display: none;
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE y Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* Aplicado globalmente a todos los elementos */
 * {
-  scrollbar-width: none;     /* Firefox */
-  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 /* -------- APAÑO TEMPORAL PARA MOSTRAR UN MENSAJE EN LA VERSIÓN MÓVIL -------- */

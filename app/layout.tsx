@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import BloqueoClickDerechoImagen from "@/lib/BloqueoClickDchoImg";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "react-hot-toast";
@@ -22,6 +23,8 @@ export default function RootLayout({
     <html lang="es">
 
       <body className="antialiased min-h-screen m-0">
+
+        <BloqueoClickDerechoImagen />
 
         {/* Versión móvil (temporal) */}
 
